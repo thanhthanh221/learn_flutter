@@ -18,17 +18,33 @@ class _OnboardingState extends State<Onboarding> {
         child: Column(
           children: [
             Image.asset('images/onboarding.png'),
-            SizedBox(height: 20.0,),
+            SizedBox(height: 20.0),
             Text(
               "The Fastest\nFood Delivery",
               textAlign: TextAlign.center,
               style: AppWidget.HeadlineTextFeildSyle(),
             ),
-            SizedBox(height: 20.0,),
+            SizedBox(height: 20.0),
             Text(
               "Craving something delicious?\nOrder from your favorite restaurants and get it delivered fast!",
               textAlign: TextAlign.center,
               style: AppWidget.SimpleTextFeildStyle(),
+            ),
+            SizedBox(height: 30.0),
+            Container(
+              height: 60,
+              width: MediaQuery.of(context).size.width / 2,
+              decoration: BoxDecoration(color: Color(0xff8c592a), borderRadius: BorderRadius.circular(20.0)),
+              child: Center(
+                child: Text(
+                  "Get Started",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
             ),
           ],
         ),
